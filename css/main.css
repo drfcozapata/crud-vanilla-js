@@ -1,0 +1,154 @@
+/**** @Author: Francisco Zapata ****/
+
+
+/** Reset the document **/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/** Custom Properties **/
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --green: #57be5d;
+    --yellow: #ffd400;
+    --tomato: #ff5400;
+    --grey: #afb5b9;
+}
+
+
+/** Globals **/
+
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+h3 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/** Formulario **/
+
+#addUser {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.addUser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.field {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.field input {
+    border: 0.1rem solid var(--grey);
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.submitBtn,
+.updateBtn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+.updateBtn {
+    display: none;
+}
+
+
+/* LISTA DE USUARIOS */
+
+.userList {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.userItem {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto 0 auto;
+}
+
+.userInfo {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions button {
+    width: 45%;
+    border: none;
+    padding: 0.8rem;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.update {
+    background-color: var(--yellow);
+}
+
+.delete {
+    background-color: var(--tomato);
+}
