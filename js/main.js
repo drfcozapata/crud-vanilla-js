@@ -1,20 +1,5 @@
 /** ARRAY QUE CONTIENE LOS DATOS A MOSTRAR **/
-let usersList = [{
-        name: "Francisco",
-        lastName: "Zapata Millán",
-        email: "drfcozapata@gmail.com",
-    },
-    {
-        name: "Daniel",
-        lastName: "Meza Miranda",
-        email: "daniel@gmail.com",
-    },
-    {
-        name: "Samantha",
-        lastName: "López Martínez",
-        email: "samy@gmail.com",
-    },
-];
+let usersList = [];
 
 /** VARIABLE PARA SABER SI CREAR O EDITAR **/
 let updateFlag = false,
